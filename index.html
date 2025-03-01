@@ -2,141 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Training</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <style>
-        .container6 {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            gap: 20px;
-            width: 100%;
-            padding: 20px 30px 40px 30px;
-            border-top: 2px solid #efefef;
-        }
-
-        .c6-con {
-            width: auto;
-        }
-
-        .c6-con > h2 {
-            font-family: 'montserrat-600';
-            font-size: 16px;
-            line-height: 1.5;
-            color: #07129d;
-        }
-
-        .social-con {
-            width: auto;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .img-con1 {
-            width: auto;
-            cursor: pointer;
-        }
-
-        .img-con2 {
-            width: auto;
-            cursor: pointer;
-        }
-
-        .img-con1 > img {
-            width: 30px;
-        }
-
-        .img-con2 > img {
-            width: 30px;
-            width: 30px;
-            filter: invert(50%) sepia(61%) saturate(1952%) hue-rotate(162deg) brightness(96%) contrast(102%);
-        }
-    </style>
+    <title>FreelancingWithRosebel</title>
+   <!-- Meta Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '699650998988250');
+            fbq('track', 'PageView');
+            </script>
+            <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=699650998988250&ev=PageView&noscript=1"
+            />
+            </noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
-    <div class="container1">
-        <h1>100% FREE TRAINING </h1>
-        <div class="img-container">
-            <img src="img/present.jpg" alt="Rosebel Pic">
+    <div class="hero">
+        <div class="text-container">
+            <h1><red class="emp">Free Training: </red>How Anyone Can Profit From Freelancing in 2025.
+            </h1>
+            <h2>Land Remote Jobs From The Comfort of Your Home
+            </h2>
+            <h3>Click on the button below to get access to the training before the timer hits zero!
+            </h3>
+            
+            <div class="timer-container">
+                <div class="timer-card">
+                  <div id="days">00</div>
+                  <div class="label">Day(s)</div>
+                </div>
+                <div class="timer-card">
+                  <div id="hours">00</div>
+                  <div class="label">Hour(s)</div>
+                </div>
+                <div class="timer-card">
+                  <div id="mins">00</div>
+                  <div class="label">Minute(s)</div>
+                </div>
+                <div class="timer-card">
+                  <div id="secs">00</div>
+                  <div class="label">Second(s)</div>
+                </div>
+              </div>
+              
+              <script>
+                const countdown = () => {
+                  const endDate = new Date();
+                  endDate.setSeconds(endDate.getSeconds() + 3 * 24 * 60 * 60 + 2 * 60 * 60 + 5 * 60 + 45);
+              
+                  const timer = setInterval(() => {
+                    const now = new Date();
+                    const diff = endDate - now;
+              
+                    if (diff <= 0) {
+                      clearInterval(timer);
+                      countdown();
+                      return;
+                    }
+              
+                    const days = String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, '0');
+                    const hours = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+                    const mins = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+                    const secs = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
+              
+                    document.getElementById('days').textContent = days;
+                    document.getElementById('hours').textContent = hours;
+                    document.getElementById('mins').textContent = mins;
+                    document.getElementById('secs').textContent = secs;
+                  }, 1000);
+                };
+              
+                countdown();
+              </script>
         </div>
-        <h2>Hi there, My name is Rosebel Peace. <br><br>
-            In this PRIVATE presentation, I'll share with you how you can earn at least an extra $150 to $200 online monthly without stress. </h2>
-        <button onclick="location.href='https://wa.link/plx94j'">Watch Presentation</button>
-        <h3>WARNING: This Presentation is for Serious People Who Are Truly Looking for a Way Out of Always “Not Having Enough” ONLY</h3>
+
+        <button class="cta" aria-label="Click Here To Register" name="Click Here To Register" title="Click Here To Register" value="Click Here To Register" onclick="window.location.href='https://wa.link/43o3fm';">Click Here To Register</button>
     </div>
-    <div class="container2">
-        <h1>IN THIS PRESENTATION, I WILL SHOW YOU...</h1>
-        <ul>
-            <li>The BEST &amp; EASIEST way to start and grow a solid income stream doing business online right from the comfort of your own home... </li>
-            <li>How to start with very little upfront capital and no experience &lbbrk;I will show you exactly what you need to know.&rbbrk; </li>
-            <li>How you can tap into this proven system right now and start making extra N100,000 &lbbrk;or more&rbbrk; monthly</li>
-        </ul>
-        <button onclick="location.href='https://wa.link/plx94j'">Watch Presentation</button>
-    </div>
-    <div class="container3">
-        <div class="img-container2">
-            <label for="#img2"><i>How much do you spend on subscription in a month and what do you spend your data doing?
-                <br><br>
-                This was me before I started an online business - when I always spent a lot of money on data and didn't use it for anything that made me money in return.
-                <br>
-                I downloaded TV series back to back, I slept on the streets of TikTok, there was no trend on TikTok I didn't know.</i></label>
-            <img src="img/before.jpg" alt="Rosebel Pic" id="img2">
-        </div>
-        <div class="img-container2">
-            <label for="#img2"><i>This is me now... when I started earning online and realised that I can do more with my smartphone and live the life I desire</i></label>
-            <img src="img/after.jpg" alt="Rosebel Pic" id="img2">
-        </div>
-        <h3>
-            That is the difference having money makes in your life &hyphen; it changes your looks, your confidence, your contacts, your environment… and most importantly, it changes YOU. <br><br>  I have revealed this method to over 300 people like you who are now learning and using the same online business system to re-write their life stories.
+
+    <div class="section2">
+        <h2 class="hs1"><strong class="header">this training is not for...</strong>
+            <br></br>
+            <li>Free-loaders looking for the next ponzi scheme to jump on.</li> 
+            <li>People who are not willing to invest anything into themselves in terms of knowledge acquisition.</li>
+            <li>People who can't dedicate an hour of their time to attend a life-changing training.</li>
+        </h2>
+        <h3 class="warning-text">
+            If You Are Among Any of Those Above, Please Stop Here And Exit This Page Because This Is Obviously Not For You!
         </h3>
-    </div>
-    <div class="container4">
-        <h1>Here Are Some Of Them. . . People Like You Who Have Gone Through This Same Online Business System</h1>
-        <div class="img-container3">
-            <img src="img/testimonial1.jpg" alt="Testimonial Pic">
-            <img src="img/testimonial3.jpg" alt="Testimonial Pic">
-        </div>
-        <div class="img-container3">
-            <img src="img/testimonial2.jpg" alt="Testimonial Pic">
-            <img src="img/testimonial4.jpg" alt="Testimonial Pic">
-        </div>
-        <div class="img-container3">
-            <img src="img/testimonial5.jpg" alt="Testimonial Pic">
-            <img src="img/testimonial6.jpg" alt="Testimonial Pic">
-        </div>
-        <div class="img-container3">
-            <video src="img/testimonial-vid.mp4" alt="Testimonial Pic" controls style="width: 100%;"></video>
-        </div>
-    </div>
-    <div class="container5">
-        <h1>This may probably sound too good ot be true, I understand that because I certainly felt the same when I first started but with hardwork and dedication, the story is different.
-            <br><br>
-            I don't know the problem you are facing right now, but if it's something like; bills, rent, money or sapa problems then this presentation that has turned the lives of many around can turn yours too.
-            <br><br>
-            I can take care of myself without depending on anyone; man or woman, and also, help my family.
-            <br><br>
-            The same can happen for you too.</h1>
-            <button onclick="location.href='https://wa.link/plx94j'">Watch Presentation</button>
-    </div>
-    <div class="container6">
-        <div class="c6-con">
-            <h2>Connect with me on</h2>
-        </div>
-        <div class="social-con">
-            <span class="img-con1" onclick="location.href='https://instagram.com/rosebelpeace_'"><img src="icons/ig.jpg" alt="Instagram Logo"></span>
-            <span class="img-con2" onclick="location.href='https://twitter.com/PMgbikeh'"><img src="icons/twitter.svg" alt="Twitter Logo"></span>
-        </div>
+        <h4 class="c-text">
+            However, if you are among those that have the patience to go over training materials thoroughly to master a skill properly, then this is for you.
+        </h4>
+        <h2 class="hs1"><strong class="header">who then is this training for...</strong>
+            <br></br>
+            <li>It is for you if you have a skill; Design, writing skill or any skill at all that can be offered online. 
+                Even if you are an Architect or any professional who can render your services online, this is for you.
+                </li> 
+                <br>
+            <li>This is also for you if you don't have a skill but willing to learn a lucrative skill to start earning in dollars. So, if you are among those that have the patience to go over training materials thoroughly to master a skill properly, then this is for you.</li>
+        </h2>
+        <h5 class="info-text">
+            <strong class="pri">KINDLY NOTE: </strong>THERE ARE ONLY A FEW SLOTS FOR THIS TRAINING RIGHT NOW, IF YOU WON'T BE AVAILABLE FOR THIS FREE WEBINAR PLEASE DO NOT REGISTER, IT WON'T BE FAIR TO OTHERS WHO ARE MORE INTERESTED BUT COULDN'T GET ACCESS BECAUSE SLOTS HAVE ALREADY BEEN TAKEN.
+        </h5>
     </div>
 
-
-    <footer>
-        <h5>Copyright &copy; 2023. All Right Reserved | Rosebel Peace</h5>
-    </footer>
+    <div class="section3">
+        <h1>WHAT PEOPLE ARE SAYING…</h1>
+        <div class="image-container-1">
+            <div class="image-item">
+                <img src="image-1.jpg" alt="Testimony 1">
+                <label for=".image-item">The same training you're about to register for changed Segun's life. From <strong>0 to $600</strong></label>
+            </div>
+            <div class="image-item">
+                <img src="image-2.jpg" alt="Testimony 2">
+                <label for=".image-item">The same training you're about to register for also changed Patricia's Finances, a nursing mother who now earns an extra <strong>$550</strong> monthly</label>
+            </div>
+            <div class="image-item">
+                <img src="image-3.jpg" alt="Testimony 3">
+                <label for=".image-item">All Lanre wanted was to participate in a training that can earn him at least <strong>75k/mo</strong> but guess what!!</label>
+            </div>
+        </div>
+        <div class="image-container-2">
+            <div class="image-item">
+                <img src="image-4.jpg" alt="Testimony 4">
+                <label for=".image-item">He got a remote job of <strong>$1,000/month!!</strong></label>
+            </div>
+            <div class="image-item">
+                <img src="image-5.jpg" alt="Testimony 5">
+                <label for=".image-item"><strong>$25/hr</strong> for 20hrs/week = <strong>$500</strong> Weekly payment <br><br> Do the Maths & see for yourself !!!</label>
+            </div>
+        </div>
+        <h3>You've got a chance to get started now! Don't miss out.
+        </h3>
+        <button class="cta" aria-label="Click Here To Register" name="Click Here To Register" title="Click Here To Register" value="Click Here To Register" onclick="window.location.href='https://wa.link/43o3fm';">Click Here To Register</button>
+    </div>
+    <div class="section4">
+        <h6>Rosebel Peace &copy; 2025</h6>
+    </div>
 </body>
 </html>
